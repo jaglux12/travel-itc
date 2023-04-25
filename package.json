@@ -1,0 +1,14 @@
+{
+  "name": "turismo-itc",
+  "version": "1.0.0",
+  "description": "página de turismo itc",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "jaglux12",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
