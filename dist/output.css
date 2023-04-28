@@ -546,10 +546,6 @@ video {
   height: 75%;
 }
 
-.h-4\/6 {
-  height: 66.666667%;
-}
-
 .h-72 {
   height: 18rem;
 }
@@ -644,11 +640,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
 .border-2 {
   border-width: 2px;
 }
@@ -694,10 +685,6 @@ video {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-no-repeat {
@@ -800,12 +787,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -856,7 +837,12 @@ video {
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+  background-size: cover;
+  background-position: center;
   padding: 1.75rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .ImgCard {
@@ -864,6 +850,36 @@ video {
   width: 100%;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+
+.Titulo_pago {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(204 45 74 / var(--tw-text-opacity));
+}
+
+@media (min-width: 880px) {
+  .Titulo_pago {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.Parrafo_pago {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 880px) {
+  .Parrafo_pago {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media not all and (min-width: 880px) {
@@ -1060,11 +1076,6 @@ video {
     text-align: right;
   }
 
-  .min-laptop\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .min-laptop\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1084,4 +1095,3 @@ video {
     font-weight: 600;
   }
 }
-
