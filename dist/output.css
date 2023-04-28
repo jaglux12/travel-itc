@@ -658,11 +658,6 @@ video {
   border-color: rgb(204 45 74 / var(--tw-border-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-gray-travel {
   --tw-bg-opacity: 1;
   background-color: rgb(250 249 249 / var(--tw-bg-opacity));
@@ -709,6 +704,10 @@ video {
   background-repeat: no-repeat;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -727,11 +726,6 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -743,6 +737,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base {
@@ -758,6 +757,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -818,9 +822,18 @@ video {
   width: 12rem;
   flex: none;
   border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 880px) {
+  .Card {
+    height: 18rem;
+    width: 16rem;
+  }
 }
 
 .Card:nth-child(odd) {
@@ -839,11 +852,24 @@ video {
 
 .CardFull {
   height: 402px;
-  width: 334px;
+  width: 100%;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(254 242 242 / var(--tw-bg-opacity));
   padding: 1.75rem;
+}
+
+.ImgCard {
+  height: 66.666667%;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+@media not all and (min-width: 880px) {
+  .max-min-laptop\:hidden {
+    display: none;
+  }
 }
 
 @media not all and (min-width: 640px) {
@@ -896,11 +922,6 @@ video {
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
-  .sm\:bg-red-travel {
-    --tw-bg-opacity: 1;
-    background-color: rgb(204 45 74 / var(--tw-bg-opacity));
-  }
-
   .sm\:bg-transparent {
     background-color: transparent;
   }
@@ -935,31 +956,132 @@ video {
 }
 
 @media (min-width: 880px) {
-  .min-laptop\:h-52 {
-    height: 13rem;
+  .min-laptop\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
-  .min-laptop\:h-72 {
-    height: 18rem;
+  .min-laptop\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .min-laptop\:flex {
+    display: flex;
+  }
+
+  .min-laptop\:hidden {
+    display: none;
   }
 
   .min-laptop\:h-80 {
     height: 20rem;
   }
 
-  .min-laptop\:w-40 {
-    width: 10rem;
+  .min-laptop\:h-height-caf2-tb {
+    height: 403px;
   }
 
-  .min-laptop\:w-72 {
-    width: 18rem;
+  .min-laptop\:h-height-cafayate-tb {
+    height: 830px;
   }
 
-  .min-laptop\:w-64 {
-    width: 16rem;
+  .min-laptop\:h-wheader-title-tablet {
+    height: 550px;
   }
 
-  .min-laptop\:justify-center {
-    justify-content: center;
+  .min-laptop\:w-wheader-title-tablet {
+    width: 550px;
+  }
+
+  .min-laptop\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .min-laptop\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .min-laptop\:flex-col {
+    flex-direction: column;
+  }
+
+  .min-laptop\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .min-laptop\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .min-laptop\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .min-laptop\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .min-laptop\:bg-chocon {
+    background-image: url(https://i.postimg.cc/wM0B8R8Q/Any-Conv-com-chocon-WEB-770x513.webp);
+  }
+
+  .min-laptop\:bg-cordoba {
+    background-image: url(https://i.postimg.cc/N0mfGzvM/Any-Conv-com-cordob.webp);
+  }
+
+  .min-laptop\:bg-madryn {
+    background-image: url(https://i.postimg.cc/JzyzvhTj/Any-Conv-com-madry.webp);
+  }
+
+  .min-laptop\:bg-mendoza {
+    background-image: url(https://i.postimg.cc/WpXp4ZCM/Any-Conv-com-mendoza.webp);
+  }
+
+  .min-laptop\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .min-laptop\:p-14 {
+    padding: 3.5rem;
+  }
+
+  .min-laptop\:p-8 {
+    padding: 2rem;
+  }
+
+  .min-laptop\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .min-laptop\:text-right {
+    text-align: right;
+  }
+
+  .min-laptop\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .min-laptop\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .min-laptop\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .min-laptop\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .min-laptop\:font-semibold {
+    font-weight: 600;
   }
 }
+

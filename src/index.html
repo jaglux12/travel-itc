@@ -16,9 +16,9 @@
 <body class="h-screen w-full">
 
     <main class="w-full h-3/4 p-5 flex flex-col bg-iguazu bg-no-repeat bg-cover sm:p-0">
-        <header class="h-9 mb-5 flex justify-end items-center sm:bg-white sm:h-height-header sm:justify-between sm:p-5">
+        <header class="h-9 mb-5 flex justify-end items-center sm:bg-white sm:h-height-header sm:justify-between sm:p-5 min-laptop:p-8">
             <h1 class="text-red-travel font-Montserrat font-bold text-lg max-sm:hidden">Turismo ITC</h1>
-            <ul class="flex space-x-3 text-red-travel font-Montserrat font-bold text-sm max-sm:hidden">
+            <ul class="flex space-x-3 text-red-travel font-Montserrat font-bold text-sm max-sm:hidden min-laptop:text-sm min-laptop:space-x-10">
                 <li>Lugares</li>
                 <li>Alojamientos</li>
                 <li>FAQs</li>
@@ -27,34 +27,33 @@
 
             <div>
                 <button class="max-sm:hidden">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass text-red-travel"></i>
                 </button>
                 <button class="h-8 w-14 rounded-full bg-white shadow-sm sm:shadow-none sm:bg-transparent">
                     <i class="fa-solid fa-moon text-red-travel"></i>
                 </button> 
                 <button class="max-sm:hidden">
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-user text-dark-gray-travel"></i>
                 </button>
             </div>
-            
         </header>
-        <footer class="h-full flex flex-col justify-between sm:ps-5 sm:justify-normal sm:space-y-5">
+        <footer class="h-full flex flex-col justify-between sm:ps-5 sm:justify-normal sm:space-y-5 min-laptop:pt-24">
             <input class="h-12 rounded-full text-center shadow-sm outline-none sm:hidden" type="search" placeholder="Cataratas">
-            <p class="text-red-travel border-red-travel border-2 text-2xl font-Montserrat font-bold w-72 rounded-2xl p-4 bg-white/50 max-sm:hidden">
+            <p class="text-red-travel border-red-travel border-2 text-2xl font-Montserrat font-bold w-72 rounded-2xl p-4 bg-white/50 max-sm:hidden min-laptop:p-8 min-laptop:text-4xl min-laptop:w-wheader-title-tablet">
                 Encuentra ese lugar ideal para tus vacaciones soñadas
             </p>
-            <button class="w-48 h-12 mx-auto text-red-travel rounded-full bg-white shadow-sm sm:mx-0">
+            <button class="w-48 h-12 mx-auto text-red-travel rounded-full bg-white shadow-sm sm:mx-0 min-laptop:font-semibold">
                 Explorar más
             </button>
         </footer>
     </main>
 
     <section class="p-4 mt-3">
-        <h2 class="text-2xl text-red-travel">Nuestras recomendaciones</h2>
+        <h2 class="text-2xl text-red-travel font-bold">Nuestras recomendaciones</h2>
         <article class="w-auto h-72 flex items-center overflow-x-auto overscroll-x-contain space-x-6 min-laptop:h-80">
 
-            <div class="Card bg-black min-laptop:w-64 min-laptop:h-72">
-                <img class="rounded-t-lg h-4/6 w-full" src="https://i.postimg.cc/wMf9bKLW/Any-Conv-com-puerto-iguazu.webp" alt="">
+            <div class="Card">
+                <img class="ImgCard" src="https://i.postimg.cc/wMf9bKLW/Any-Conv-com-puerto-iguazu.webp" alt="">
                 <div class="p-4">
                     <h3 class="font-bold font-Montserrat">
                         Puerto iguazú
@@ -65,8 +64,8 @@
                 </div>
             </div>
 
-            <div class="Card bg-black min-laptop:w-64 min-laptop:h-72">
-                <img class="rounded-t-lg h-4/6 w-full " src="https://i.postimg.cc/3NJKBr44/Any-Conv-com-ushuaia.webp" alt="">
+            <div class="Card">
+                <img class="ImgCard" src="https://i.postimg.cc/3NJKBr44/Any-Conv-com-ushuaia.webp" alt="">
                 <div class="p-4">
                     <h3 class="font-bold font-Montserrat">
                         Ushuaia
@@ -77,26 +76,44 @@
                 </div>
             </div>
 
-            <div class="Card bg-black min-laptop:w-64 min-laptop:h-72">
-                <img class="rounded-t-lg h-4/6 w-full" src="https://i.postimg.cc/N0mfGzvM/Any-Conv-com-cordob.webp" alt="">
+            <div class="Card">
+                <img class="ImgCard min-laptop:hidden" src="https://i.postimg.cc/N0mfGzvM/Any-Conv-com-cordob.webp" alt="">
+                <img class="ImgCard max-min-laptop:hidden" src="https://i.postimg.cc/9MBmZwMH/Any-Conv-com-isla92.webp" alt="">
                 <div class="p-4">
                     <h3 class="font-bold font-Montserrat">
-                        Cafayate
+                        <label class="min-laptop:hidden ">Cafayate</label>
+                        <label class="max-min-laptop:hidden">Choele Choel</label>
                     </h3>
                     <p class="text-xs font-Montserrat"> 
-                        Lugares de ensueño
+                        <label class="min-laptop:hidden ">Lugares de ensueño.</label>
+                        <label class="max-min-laptop:hidden">Paisajes que enamoran.</label>
                     </p>
                 </div>
             </div>
 
-            <div class="Card bg-black min-laptop:w-64 min-laptop:h-72">
-                <img class="rounded-t-lg h-4/6 w-full" src="https://i.postimg.cc/FzSvWSSD/photo-1589481169991-40ee02888551.webp" alt="">
+            <div class="Card">
+                <img class="ImgCard min-laptop:hidden" src="https://i.postimg.cc/FzSvWSSD/photo-1589481169991-40ee02888551.webp" alt="">
+                <img class="ImgCard max-min-laptop:hidden" src="https://i.postimg.cc/W1Q1vPKC/Any-Conv-com-cafayate.webp" alt="">
                 <div class="p-4">
                     <h3 class="font-bold font-Montserrat">
-                        Seattle
+                        <label class="min-laptop:hidden ">Seattle</label>
+                        <label class="max-min-laptop:hidden">Cafayate</label>
                     </h3>
                     <p class="text-xs font-Montserrat"> 
-                        Big City
+                        <label class="min-laptop:hidden ">Big City</label>
+                        <label class="max-min-laptop:hidden">Lugares de ensueño.</label>
+                    </p>
+                </div>
+            </div>
+
+            <div class="Card max-min-laptop:hidden">
+                <img class="ImgCard" src="https://i.postimg.cc/C10MRsw-4/Any-Conv-com-calafate.webp" alt="">
+                <div class="p-4">
+                    <h3 class="font-bold font-Montserrat">
+                        Calafate
+                    </h3>
+                    <p class="text-xs font-Montserrat"> 
+                        Los glaciares a tu alcance.
                     </p>
                 </div>
             </div>
@@ -105,52 +122,64 @@
     </section>
 
 
-    <section class="w-full flex space-y-5 flex-col items-center py-3 sm:grid sm:grid-cols-1 sm:p-4 sm:justify-center sm:bg-red-travel">
-        <div class="CardFull bg-isla bg-cover bg-center shadow-md sm:w-full">
-            <h4 class="text-2xl font-Montserrat font-extrabold text-white">Choele Choel</h4>
-            <p class="w-24 text-sm font-Montserrat text-white ">Paisajes para enamorarse.</p>
+    <section class="w-full flex space-y-5 flex-col items-center p-3 sm:grid sm:grid-cols-1 sm:p-4 sm:justify-center  min-laptop:grid-rows-1 min-laptop:grid-cols-2 min-laptop:space-y-0 min-laptop:gap-3">
+        <div class="CardFull bg-isla bg-cover bg-center shadow-md sm:w-full min-laptop:col-span-2 min-laptop:h-wheader-title-tablet min-laptop:flex min-laptop:flex-col min-laptop:text-right min-laptop:p-14 min-laptop:bg-mendoza">
+            <h4 class="text-2xl font-Montserrat font-extrabold text-white min-laptop:hidden">Choele Choel</h4>
+            <p class="w-24 text-sm font-Montserrat text-white min-laptop:hidden">Paisajes para enamorarse.</p>
+
+            <h4 class="text-3xl font-Montserrat font-extrabold text-white max-min-laptop:hidden">Mendoza</h4>
+            <p class="w-full text-xl font-Montserrat text-white max-min-laptop:hidden">Incluye alojamiento y 3 excursiones.</p>
         </div>
 
-        <div class="CardFull bg-cafayate bg-cover bg-center shadow-md sm:w-full">
-            <h4 class="text-2xl font-Montserrat font-extrabold text-white">Cafayate</h4>
-            <p class="text-sm font-Montserrat text-white ">Lugares de ensueños.</p>
+        <div class="CardFull bg-cafayate bg-cover bg-center shadow-md sm:w-full min-laptop:row-span-2 min-laptop:h-height-cafayate-tb min-laptop:flex min-laptop:flex-col min-laptop:text-right min-laptop:p-10 min-laptop:bg-cordoba">
+            <h4 class="text-2xl font-Montserrat font-extrabold text-white min-laptop:hidden">Cafayate</h4>
+            <p class="text-sm font-Montserrat text-white min-laptop:hidden">Lugares de ensueños.</p>
+
+            <h4 class="text-3xl font-Montserrat font-extrabold text-white max-min-laptop:hidden">Córdoba</h4>
+            <p class="w-full text-xl font-Montserrat text-white max-min-laptop:hidden">4 días, 3 noches, para descubrir las sierras y su paz.</p>
         </div>
 
-        <div class="CardFull bg-calafate bg-cover bg-center shadow-md sm:w-full">
-            <h4 class="text-2xl font-Montserrat font-extrabold text-white">Calafate</h4>
-            <p class="w-24 text-sm font-Montserrat text-white ">Los glaciares a tu alcance.</p>
+        <div class="CardFull bg-calafate bg-cover bg-center shadow-md sm:w-full min-laptop:h-height-caf2-tb min-laptop:flex min-laptop:flex-col min-laptop:text-right min-laptop:p-10 min-laptop:bg-madryn min-laptop:justify-end">
+            <h4 class="text-2xl font-Montserrat font-extrabold text-white min-laptop:hidden">Calafate</h4>
+            <p class="w-24 text-sm font-Montserrat text-white min-laptop:hidden">Los glaciares a tu alcance.</p>
+
+            <h4 class="text-3xl font-Montserrat font-extrabold text-white max-min-laptop:hidden">Puerto Madryn</h4>
+            <p class="w-full text-xl font-Montserrat text-white max-min-laptop:hidden">3 días y 2 noches. Incluye clase de buceo para dos!</p>
         </div>
 
-        <div class="CardFull bg-bariloche bg-cover bg-center shadow-md sm:w-full">
-            <h4 class="text-2xl font-Montserrat font-extrabold text-white">Bariloche</h4>
-            <p class="w-24 text-sm font-Montserrat text-white ">Monatañas, nieve y sol.</p>
+        <div class="CardFull bg-bariloche bg-cover bg-center shadow-md sm:w-full min-laptop:h-height-caf2-tb min-laptop:flex min-laptop:flex-col min-laptop:text-right min-laptop:p-10 min-laptop:bg-chocon min-laptop:justify-end">
+            <h4 class="text-2xl font-Montserrat font-extrabold text-white min-laptop:hidden">Bariloche</h4>
+            <p class="w-24 text-sm font-Montserrat text-white min-laptop:hidden ">Monatañas, nieve y sol.</p>
+
+            <h4 class="text-3xl font-Montserrat font-extrabold text-white max-min-laptop:hidden">Villa El Chocon</h4>
+            <p class="w-full text-xl font-Montserrat text-white max-min-laptop:hidden">3 días y 2 noches. Incluye paseo en kayac.</p>
         </div>
     </section>
 
 
     <section class="flex flex-col px-8 py-10">
-        <h5 class="text-2xl text-red-travel font-bold font-Montserrat">Preguntas frecuentes:</h5>
+        <h5 class="text-2xl text-red-travel font-bold font-Montserrat min-laptop:text-3xl">Preguntas frecuentes:</h5>
         <article class="my-3">
-            <h5 class="text-red-travel text-base font-Montserrat font-semibold">
+            <h5 class="text-red-travel text-base font-Montserrat font-semibold min-laptop:text-2xl">
                 Metodos de pago
             </h5>
-            <p class="font-Montserrat text-xs font-medium">
+            <p class="font-Montserrat text-xs font-medium min-laptop:text-sm">
                 Aceptamos VISA, MasterdCard, AmericanExpress, Paypal y Binance.
             </p>
         </article>
         <article class="my-3">
-            <h5 class="text-red-travel text-base font-Montserrat font-semibold">
+            <h5 class="text-red-travel text-base font-Montserrat font-semibold min-laptop:text-2xl">
                 Politicas de cancelación
             </h5>
-            <p class="font-Montserrat text-xs font-medium">
+            <p class="font-Montserrat text-xs font-medium min-laptop:text-sm">
                 Una vez realizado el pago tiene 24hrs para arrepentirse. Pasado ese tiempo no devolvera el pago.
             </p>
         </article>
         <article class="my-3">
-            <h5 class="text-red-travel text-base font-Montserrat font-semibold">
+            <h5 class="text-red-travel text-base font-Montserrat font-semibold min-laptop:text-2xl">
                 Extension de estadia
             </h5>
-            <p class="font-Montserrat text-xs font-medium">
+            <p class="font-Montserrat text-xs font-medium min-laptop:text-sm">
                 En caso de querer extender su estadia en el destino vacacional elegido estará sujeto a disponibilidad hotelera.
             </p>
         </article>
