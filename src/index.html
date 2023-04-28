@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,19 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Karla:wght@300;400;700&family=Lexend+Deca&family=Montserrat:wght@300;400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="styles.css">
     
 </head>
 <body class="h-screen w-full">
 
     <main class="w-full h-3/4 p-5 flex flex-col bg-iguazu bg-no-repeat bg-cover sm:p-0">
+
         <header class="h-9 mb-5 flex justify-end items-center sm:bg-white sm:h-height-header sm:justify-between sm:p-5 min-laptop:p-8">
-            <h1 class="text-red-travel font-Montserrat font-bold text-lg max-sm:hidden">Turismo ITC</h1>
+            <h1 class="text-red-travel font-Montserrat font-bold text-lg max-sm:hidden"><a href="">Turismo ITC</a></h1>
             <ul class="flex space-x-3 text-red-travel font-Montserrat font-bold text-sm max-sm:hidden min-laptop:text-sm min-laptop:space-x-10">
-                <li>Lugares</li>
-                <li>Alojamientos</li>
-                <li>FAQs</li>
-                <li>Sobre nosotros</li>
+                <li><a href="">Lugares</a></li>
+                <li><a href="">Alojamientos</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Sobre nosotros</a></li>
             </ul> 
 
             <div>
@@ -39,7 +40,8 @@
                 </button>
             </div>
         </header>
-        <footer class="h-full flex flex-col justify-between sm:ps-5 sm:justify-normal sm:space-y-5 min-laptop:pt-24">
+
+        <footer class="h-full flex flex-col justify-between sm:ps-5 sm:justify-normal sm:space-y-5 min-laptop:pt-10">
             <input class="h-12 rounded-full text-center shadow-sm outline-none sm:hidden" type="search" placeholder="Cataratas">
             <p class="text-red-travel border-red-travel border-2 text-2xl font-Montserrat font-bold w-72 rounded-2xl p-4 bg-white/50 max-sm:hidden min-laptop:p-8 min-laptop:text-4xl min-laptop:w-wheader-title-tablet">
                 Encuentra ese lugar ideal para tus vacaciones soñadas
@@ -48,19 +50,21 @@
                 Explorar más
             </button>
         </footer>
+
     </main>
 
     <section class="p-4 mt-3">
-        <h2 class="text-2xl text-red-travel font-bold">Nuestras recomendaciones</h2>
+
+        <h2 class="text-xl text-red-travel font-bold min-laptop:text-2xl">Nuestras recomendaciones</h2>
         <article class="w-auto h-72 flex items-center overflow-x-auto overscroll-x-contain space-x-6 min-laptop:h-80">
 
             <div class="Card">
                 <img class="ImgCard" src="https://i.postimg.cc/wMf9bKLW/Any-Conv-com-puerto-iguazu.webp" alt="">
                 <div class="p-4">
-                    <h3 class="font-bold font-Montserrat">
+                    <h3 class="font-bold font-Montserrat min-laptop:text-xl">
                         Puerto iguazú
                     </h3>
-                    <p class="text-xs font-Montserrat"> 
+                    <p class="text-xs font-Montserrat min-laptop:text-sm"> 
                         Paisajes Maravillosos
                     </p>
                 </div>
@@ -69,10 +73,10 @@
             <div class="Card">
                 <img class="ImgCard" src="https://i.postimg.cc/3NJKBr44/Any-Conv-com-ushuaia.webp" alt="">
                 <div class="p-4">
-                    <h3 class="font-bold font-Montserrat">
+                    <h3 class="font-bold font-Montserrat min-laptop:text-xl">
                         Ushuaia
                     </h3>
-                    <p class="text-xs font-Montserrat"> 
+                    <p class="text-xs font-Montserrat min-laptop:text-sm"> 
                         El fin del mundo
                     </p>
                 </div>
@@ -83,12 +87,12 @@
                 <img class="ImgCard max-min-laptop:hidden" src="https://i.postimg.cc/9MBmZwMH/Any-Conv-com-isla92.webp" alt="">
                 <div class="p-4">
                     <h3 class="font-bold font-Montserrat">
-                        <label class="min-laptop:hidden ">Cafayate</label>
-                        <label class="max-min-laptop:hidden">Choele Choel</label>
+                        <label class="min-laptop:hidden">Cafayate</label>
+                        <label class="min-laptop:text-xl max-min-laptop:hidden">Choele Choel</label>
                     </h3>
                     <p class="text-xs font-Montserrat"> 
                         <label class="min-laptop:hidden ">Lugares de ensueño.</label>
-                        <label class="max-min-laptop:hidden">Paisajes que enamoran.</label>
+                        <label class="text-sm max-min-laptop:hidden">Paisajes que enamoran.</label>
                     </p>
                 </div>
             </div>
@@ -99,11 +103,11 @@
                 <div class="p-4">
                     <h3 class="font-bold font-Montserrat">
                         <label class="min-laptop:hidden ">Seattle</label>
-                        <label class="max-min-laptop:hidden">Cafayate</label>
+                        <label class="min-laptop:text-xl max-min-laptop:hidden">Cafayate</label>
                     </h3>
                     <p class="text-xs font-Montserrat"> 
-                        <label class="min-laptop:hidden ">Big City</label>
-                        <label class="max-min-laptop:hidden">Lugares de ensueño.</label>
+                        <label class="min-laptop:text-xl min-laptop:hidden ">Big City</label>
+                        <label class="text-sm max-min-laptop:hidden">Lugares de ensueño.</label>
                     </p>
                 </div>
             </div>
@@ -111,16 +115,16 @@
             <div class="Card max-min-laptop:hidden">
                 <img class="ImgCard" src="https://i.postimg.cc/C10MRsw-4/Any-Conv-com-calafate.webp" alt="">
                 <div class="p-4">
-                    <h3 class="font-bold font-Montserrat">
+                    <h3 class="font-bold font-Montserrat text-xl">
                         Calafate
                     </h3>
-                    <p class="text-xs font-Montserrat"> 
+                    <p class="text-sm font-Montserrat"> 
                         Los glaciares a tu alcance.
                     </p>
                 </div>
             </div>
-
         </article>
+        
     </section>
 
 
@@ -194,6 +198,7 @@
     </section>
 
     <section class="p-5 bg-gray-travel">
+
         <h6 class="text-dark-gray-travel text-lg font-semibold font-Montserrat">Nosotros</h6>
         <ul class="text-dark-gray-travel text-base font-Montserrat font-medium">
             <li>Inversiones</li>
@@ -207,6 +212,7 @@
                 <i class="fa-brands fa-instagram"></i>
             </li>
         </ul>
+
     </section>
 
     <script src="https://kit.fontawesome.com/71e127b5d0.js" crossorigin="anonymous"></script>
